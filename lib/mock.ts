@@ -373,8 +373,3 @@ export const reservas: Reserva[] = [
     actualizadaEn: "2026-06-23T09:45:00Z",
   },
 ];
-
-// Auto-stub (deploy validator): exports que las paginas usan pero faltaban.
-export const mockClientes: any = {};
-export const mockMesas: any = {};
-export const mockReservas: any = {};
