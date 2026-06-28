@@ -1,7 +1,13 @@
 "use client";
 export const dynamic = "force-dynamic";
-import { LoginForm } from "@/components/ui/LoginForm";
+import { PageHeader } from "@/components/ui/PageHeader";
+import { EmptyState } from "@/components/ui/EmptyState";
 
-export default function LoginPage() {
-  return <LoginForm appName="ReservApp — Gestión de Restaurante" />;
+export default function SectionPage() {
+  return (
+    <div className="space-y-6">
+      <PageHeader title="Login" />
+      <EmptyState title="Login" description="Sección en preparación." />
+    </div>
+  );
 }
