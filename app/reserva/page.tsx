@@ -2,7 +2,7 @@
 export const dynamic = "force-dynamic";
 import { useState } from "react";
 import Link from "next/link";
-import { mockReservas, mockMesas, mockClientes } from "@/lib/mock";
+import { reservas as mockReservas, mesas as mockMesas, clientes as mockClientes } from "@/lib/mock";
 
 type EstadoReserva = "pendiente" | "confirmada" | "cancelada";
 
