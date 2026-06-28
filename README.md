@@ -1,2 +1,3 @@
-# qa134925-web
-ScrumDev AI frontend (qa134925-web)
+# QA134925 - Frontend
+
+Next.js desplegado en Vercel.
