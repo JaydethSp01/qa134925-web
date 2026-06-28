@@ -1,6 +1,5 @@
 "use client";
 export const dynamic = "force-dynamic";
-import { MetricCard } from "@/components/ui/MetricCard";
 import { Hero } from "@/components/ui/Hero";
 import { POSBoard } from "@/components/ui/POSBoard";
 import Link from "next/link";
