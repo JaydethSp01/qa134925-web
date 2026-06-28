@@ -1,17 +1,12 @@
 "use client";
-export const dynamic = "force-dynamic";
-import { useState, useMemo } from "react";
-import Link from "next/link";
-import { clientes as mockClientes, type Cliente } from "@/lib/mock";
+import { PageHeader } from "@/components/ui/PageHeader";
+import { EmptyState } from "@/components/ui/EmptyState";
 
-export default function ClientesPage() {
-  const [clientes, setClientes] = useState<Cliente[]>(mockClientes);
-  const [busqueda, setBusqueda] = useState("");
-  const [modalAbierto, setModalAbierto] = useState(false);
-  const [clienteEditando, setClienteEditando] = useState<Cliente | null>(null);
-  const [confirmEliminar, setConfirmEliminar] = useState<number | null>(null);
-
-  const formVacio: Omit<Cliente, "id" | "fechaRegistro" | "totalReservas"> = {
-    nombre: "",
-    email: "",
-    telefono: "",
+export default function SectionPage() {
+  return (
+    <div className="space-y-6">
+      <PageHeader title="Cliente" />
+      <EmptyState title="Cliente" description="Sección en preparación." />
+    </div>
+  );
+}
